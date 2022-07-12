@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "SlabberEx",
+    "version": "1.0",
+    "description": "SlabberEx - расширение для платформы slabber",
+    "icons": {
+        "128": "images/128.png"
+    },
+    "permissions": ["tts"],
+    "content_scripts": [{
+        "matches": ["https://*.slabber.io/posts/*"],
+        "js": ["scripts/main.js"]
+    }]
+}
